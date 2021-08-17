@@ -1,0 +1,45 @@
+/*
+ ============================================================================
+ Name        : XO_proj.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+// =============== global var ==========================
+char var1 , var2 , var;
+// =============== functions =======================
+void places();
+
+int main(void) {
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+
+	printf("Player1 will take X or O");
+	scanf("%c", var);
+	if(var == "X" || var == "x")
+	{
+		var1 = 'x';
+		var2 = 'o';
+	}
+	else if(var == "O" || var == "o")
+	{
+		var1 = 'o';
+		var2 = 'x';
+	}
+
+	places();
+
+	return 0;
+}
+
+void places()
+{
+	printf("\t\t|  1  |  2  |  3  |\n");
+	printf("\t\t|  4  |  5  |  6  |\n");
+	printf("\t\t|  7  |  8  |  9  |\n");
+}

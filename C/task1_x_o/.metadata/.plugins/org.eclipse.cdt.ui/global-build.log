@@ -1,0 +1,258 @@
+15:39:27 **** Rebuild of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+..\src\XO_proj.c: In function 'main':
+..\src\XO_proj.c:28:10: warning: format '%c' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   28 |  scanf("%c", var);
+      |         ~^   ~~~
+      |          |   |
+      |          |   int
+      |          char *
+..\src\XO_proj.c:28:10: warning: format '%c' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+..\src\XO_proj.c:29:9: warning: comparison between pointer and integer
+   29 |  if(var == "X" || var == "x")
+      |         ^~
+..\src\XO_proj.c:29:9: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\XO_proj.c:29:23: warning: comparison between pointer and integer
+   29 |  if(var == "X" || var == "x")
+      |                       ^~
+..\src\XO_proj.c:29:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\XO_proj.c:34:14: warning: comparison between pointer and integer
+   34 |  else if(var == "O" || var == "o")
+      |              ^~
+..\src\XO_proj.c:34:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\XO_proj.c:34:28: warning: comparison between pointer and integer
+   34 |  else if(var == "O" || var == "o")
+      |                            ^~
+..\src\XO_proj.c:34:28: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\XO_proj.c: In function 'tackplace':
+..\src\XO_proj.c:57:12: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   57 |    scanf("%d" , num);
+      |           ~^    ~~~
+      |            |    |
+      |            |    int
+      |            int *
+..\src\XO_proj.c:57:12: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+..\src\XO_proj.c:71:12: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   71 |    scanf("%d" , num);
+      |           ~^    ~~~
+      |            |    |
+      |            |    int
+      |            int *
+..\src\XO_proj.c:71:12: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+..\src\XO_proj.c:88:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   88 |   scanf("%d" , num);
+      |          ~^    ~~~
+      |           |    |
+      |           |    int
+      |           int *
+..\src\XO_proj.c:88:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+16:44:24 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+..\src\XO_proj.c: In function 'main':
+..\src\XO_proj.c:29:9: warning: comparison between pointer and integer
+   29 |  if(var == "X" || var == "x")
+      |         ^~
+..\src\XO_proj.c:29:9: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\XO_proj.c:29:23: warning: comparison between pointer and integer
+   29 |  if(var == "X" || var == "x")
+      |                       ^~
+..\src\XO_proj.c:29:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\XO_proj.c:34:14: warning: comparison between pointer and integer
+   34 |  else if(var == "O" || var == "o")
+      |              ^~
+..\src\XO_proj.c:34:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\XO_proj.c:34:28: warning: comparison between pointer and integer
+   34 |  else if(var == "O" || var == "o")
+      |                            ^~
+..\src\XO_proj.c:34:28: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\XO_proj.c: In function 'tackplace':
+..\src\XO_proj.c:71:12: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   71 |    scanf("%d" , num);
+      |           ~^    ~~~
+      |            |    |
+      |            |    int
+      |            int *
+..\src\XO_proj.c:71:12: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+16:44:48 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+..\src\XO_proj.c: In function 'main':
+..\src\XO_proj.c:29:9: warning: comparison between pointer and integer
+   29 |  if(var == "X" || var == "x")
+      |         ^~
+..\src\XO_proj.c:29:9: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\XO_proj.c:29:23: warning: comparison between pointer and integer
+   29 |  if(var == "X" || var == "x")
+      |                       ^~
+..\src\XO_proj.c:29:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\XO_proj.c:34:14: warning: comparison between pointer and integer
+   34 |  else if(var == "O" || var == "o")
+      |              ^~
+..\src\XO_proj.c:34:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\XO_proj.c:34:28: warning: comparison between pointer and integer
+   34 |  else if(var == "O" || var == "o")
+      |                            ^~
+..\src\XO_proj.c:34:28: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\XO_proj.c: In function 'tackplace':
+..\src\XO_proj.c:71:12: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   71 |    scanf("%d" , num);
+      |           ~^    ~~~
+      |            |    |
+      |            |    int
+      |            int *
+..\src\XO_proj.c:71:12: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+16:45:02 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+..\src\XO_proj.c: In function 'main':
+..\src\XO_proj.c:29:9: warning: comparison between pointer and integer
+   29 |  if(var == "X" || var == "x")
+      |         ^~
+..\src\XO_proj.c:29:9: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\XO_proj.c:29:23: warning: comparison between pointer and integer
+   29 |  if(var == "X" || var == "x")
+      |                       ^~
+..\src\XO_proj.c:29:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\XO_proj.c:34:14: warning: comparison between pointer and integer
+   34 |  else if(var == "O" || var == "o")
+      |              ^~
+..\src\XO_proj.c:34:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\XO_proj.c:34:28: warning: comparison between pointer and integer
+   34 |  else if(var == "O" || var == "o")
+      |                            ^~
+..\src\XO_proj.c:34:28: warning: comparison with string literal results in unspecified behavior [-Waddress]
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+16:45:33 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+16:47:24 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+16:52:23 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+16:54:25 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+16:55:55 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+16:57:28 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+Info: Nothing to build for XO_proj
+16:58:39 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+17:03:12 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+17:05:47 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+17:09:13 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+17:13:09 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file XO_proj.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:13:21 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+Info: Nothing to build for XO_proj
+17:17:39 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+17:28:15 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+19:49:35 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+19:50:47 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+19:52:56 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+19:54:32 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+Info: Nothing to build for XO_proj
+19:59:36 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file XO_proj.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:59:44 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+20:02:51 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+20:03:57 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+Info: Nothing to build for XO_proj
+Info: Nothing to build for XO_proj
+20:07:00 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XO_proj.o" "..\\src\\XO_proj.c" 
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file XO_proj.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:07:09 **** Incremental Build of configuration Debug for project XO_proj ****
+Info: Internal Builder is used for build
+gcc -o XO_proj.exe "src\\XO_proj.o" 
+Info: Nothing to build for XO_proj
+Info: Nothing to build for XO_proj
+Info: Nothing to build for XO_proj
+Info: Nothing to build for XO_proj
+Info: Nothing to build for XO_proj
+Info: Nothing to build for XO_proj

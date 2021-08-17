@@ -1,0 +1,125 @@
+/*
+ ============================================================================
+ Name        : XO_proj.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+// =============== global var ==========================
+char var1 , var2 , var;
+int num , arr[3][3];
+// =============== functions =======================
+void places();
+void tackplace();
+void print();
+void SaveElement();
+
+
+int main(void) {
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+
+	printf("Player1 will take X or O");
+	scanf("%c", var);
+	if(var == "X" || var == "x")
+	{
+		var1 = 'x';
+		var2 = 'o';
+	}
+	else if(var == "O" || var == "o")
+	{
+		var1 = 'o';
+		var2 = 'x';
+	}
+	places();
+    tackplace();
+	return 0;
+}
+
+void places()
+{
+	printf("\t\t|  1  |  2  |  3  |\n");
+	printf("\t\t|  4  |  5  |  6  |\n");
+	printf("\t\t|  7  |  8  |  9  |\n");
+	printf("\n");
+	printf("\n");
+}
+void tackplace()
+{
+	for(int i = 0 ; i < 4 ; i++)
+	{
+		printf("where will player1 play?");
+			scanf("%d" , num);
+			if(num >= 1 && num <= 3)
+			{
+				arr[0][num-1] = var1;
+			}
+			else if(num >= 4 && num <= 6)
+			{
+				arr[1][num-1] = var1;
+			}
+			else if(num >= 7 && num <= 9)
+			{
+				arr[2][num-1] = var1;
+			}
+			printf("where will player2 play?");
+			scanf("%d" , num);
+			if(num >= 1 && num <= 3)
+			{
+				arr[0][num-1] = var2;
+			}
+			else if(num >= 4 && num <= 6)
+			{
+				arr[1][num-1] = var2;
+			}
+			else if(num >= 7 && num <= 9)
+			{
+				arr[2][num-1] = var2;
+			}
+			SaveElement();
+			print();
+	}
+	printf("where will player1 play?");
+		scanf("%d" , num);
+		if(num >= 1 && num <= 3)
+		{
+			arr[0][num-1] = var1;
+		}
+		else if(num >= 4 && num <= 6)
+		{
+			arr[1][num-1] = var1;
+		}
+		else if(num >= 7 && num <= 9)
+		{
+			arr[2][num-1] = var1;
+		}
+		SaveElement();
+		print();
+}
+
+void SaveElement()
+{
+	for(int i = 0 ; i < 3 ; i++)
+	{
+		for(int j = 0 ; j < 3 ; j++)
+		{
+			if(arr[i][j] != 'x' || arr[i][j]  != 'o')
+			{
+				arr[i][j] = ' ';
+			}
+		}
+	}
+}
+void print()
+{
+	printf("\t\t|  arr[0][0]  |  arr[0][1]  |  arr[0][2]  |\n");
+	printf("\t\t|  arr[1][0]  |  arr[1][1]  |  arr[1][2]  |\n");
+	printf("\t\t|  arr[2][0]  |  arr[2][1]  |  arr[2][2]  |\n");
+	printf("\n");
+	printf("\n");
+}
