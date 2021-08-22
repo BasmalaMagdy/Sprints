@@ -1,0 +1,84 @@
+/*
+ ============================================================================
+ Name        : parentheses.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "platform_types.h"
+
+#define max 100
+#define min -1
+
+char c_data[max];
+char stack[max];
+int top = min;
+
+
+void push(uint8_t u8_data);
+uint8_t pop();
+void printStack();
+
+
+
+int main(void) {
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+
+	printf("Enter your sentence : ");
+	scanf("%s",c_data);
+
+	int i = 0;
+	while(c_data[i] != '\0')
+	{
+		push(c_data[i]);
+		i++;
+	}
+
+    printStack();
+	return 0;
+}
+
+void push(uint8_t u8_data)
+{
+	if(top != max)
+	{
+		top++;
+		stack[top] = u8_data;
+	}
+	else
+	{
+		printf("Stack is full");
+	}
+}
+
+uint8_t pop()
+{
+	char d;
+	if(top != min)
+	{
+		d = stack[top];
+		top--;
+		return d;
+	}
+	else
+	{
+		printf("stack is empty");
+		return 0;
+	}
+}
+
+void printStack()
+{
+	char data = pop();
+	while(data)
+	{
+		printf("%c", data);
+		data = pop();
+	}
+}

@@ -1,0 +1,120 @@
+11:34:15 **** Rebuild of configuration Debug for project parentheses ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parentheses.o" "..\\src\\parentheses.c" 
+..\src\parentheses.c: In function 'main':
+..\src\parentheses.c:43:32: error: invalid use of void expression
+   43 |     printf(" Stack has : %s" , printStack());
+      |                                ^~~~~~~~~~~~
+..\src\parentheses.c: In function 'printStack':
+..\src\parentheses.c:81:12: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   81 |   printf("%s", data);
+      |           ~^   ~~~~
+      |            |   |
+      |            |   int
+      |            char *
+      |           %d
+..\src\parentheses.c:81:12: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   81 |   printf("%s", data);
+      |           ~^   ~~~~
+      |            |   |
+      |            |   int
+      |            char *
+      |           %d
+11:35:14 **** Incremental Build of configuration Debug for project parentheses ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parentheses.o" "..\\src\\parentheses.c" 
+..\src\parentheses.c: In function 'printStack':
+..\src\parentheses.c:81:12: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   81 |   printf("%s", data);
+      |           ~^   ~~~~
+      |            |   |
+      |            |   int
+      |            char *
+      |           %d
+..\src\parentheses.c:81:12: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   81 |   printf("%s", data);
+      |           ~^   ~~~~
+      |            |   |
+      |            |   int
+      |            char *
+      |           %d
+gcc -o parentheses.exe "src\\parentheses.o" 
+11:35:34 **** Incremental Build of configuration Debug for project parentheses ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parentheses.o" "..\\src\\parentheses.c" 
+gcc -o parentheses.exe "src\\parentheses.o" 
+Info: Nothing to build for parentheses
+11:37:08 **** Incremental Build of configuration Debug for project parentheses ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parentheses.o" "..\\src\\parentheses.c" 
+gcc -o parentheses.exe "src\\parentheses.o" 
+Info: Nothing to build for parentheses
+11:53:00 **** Incremental Build of configuration Debug for project parentheses ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parentheses.o" "..\\src\\parentheses.c" 
+gcc -o parentheses.exe "src\\parentheses.o" 
+Info: Nothing to build for parentheses
+11:53:48 **** Incremental Build of configuration Debug for project parentheses ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parentheses.o" "..\\src\\parentheses.c" 
+gcc -o parentheses.exe "src\\parentheses.o" 
+Info: Nothing to build for parentheses
+13:47:09 **** Incremental Build of configuration Debug for project parentheses ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parentheses.o" "..\\src\\parentheses.c" 
+..\src\parentheses.c: In function 'main':
+..\src\parentheses.c:36:6: warning: unused variable 'i' [-Wunused-variable]
+   36 |  int i = 0;
+      |      ^
+gcc -o parentheses.exe "src\\parentheses.o" 
+13:47:20 **** Incremental Build of configuration Debug for project parentheses ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parentheses.o" "..\\src\\parentheses.c" 
+gcc -o parentheses.exe "src\\parentheses.o" 
+Info: Nothing to build for parentheses
+13:50:16 **** Incremental Build of configuration Debug for project parentheses ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parentheses.o" "..\\src\\parentheses.c" 
+..\src\parentheses.c: In function 'isbalanced':
+..\src\parentheses.c:97:7: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+   97 |  char p;
+      |       ^
+gcc -o parentheses.exe "src\\parentheses.o" 
+Info: Nothing to build for parentheses
+Info: Nothing to build for parentheses
+13:50:50 **** Incremental Build of configuration Debug for project parentheses ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parentheses.o" "..\\src\\parentheses.c" 
+..\src\parentheses.c: In function 'isbalanced':
+..\src\parentheses.c:97:7: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+   97 |  char p;
+      |       ^
+gcc -o parentheses.exe "src\\parentheses.o" 
+13:52:07 **** Incremental Build of configuration Debug for project parentheses ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parentheses.o" "..\\src\\parentheses.c" 
+..\src\parentheses.c: In function 'isbalanced':
+..\src\parentheses.c:97:7: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+   97 |  char p;
+      |       ^
+gcc -o parentheses.exe "src\\parentheses.o" 
+13:52:44 **** Incremental Build of configuration Debug for project parentheses ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parentheses.o" "..\\src\\parentheses.c" 
+..\src\parentheses.c: In function 'isbalanced':
+..\src\parentheses.c:97:7: warning: variable 'dd' set but not used [-Wunused-but-set-variable]
+   97 |  char dd;
+      |       ^~
+gcc -o parentheses.exe "src\\parentheses.o" 
+13:55:00 **** Incremental Build of configuration Debug for project parentheses ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parentheses.o" "..\\src\\parentheses.c" 
+..\src\parentheses.c: In function 'isbalanced':
+..\src\parentheses.c:97:7: warning: variable 'dd' set but not used [-Wunused-but-set-variable]
+   97 |  char dd = ' ';
+      |       ^~
+gcc -o parentheses.exe "src\\parentheses.o" 
+Info: Nothing to build for parentheses
+Info: Nothing to build for parentheses
+Info: Nothing to build for parentheses
+Info: Nothing to build for parentheses

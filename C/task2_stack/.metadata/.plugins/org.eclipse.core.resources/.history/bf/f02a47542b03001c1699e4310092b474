@@ -1,0 +1,45 @@
+/*
+ ============================================================================
+ Name        : parentheses.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "platform_types.h"
+
+#define max 100
+#define min -1
+
+char stack[max];
+int top = min;
+
+void push(uint8_t u8_data);
+uint8_t pop();
+void printStack();
+
+
+
+int main(void) {
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+
+	printf("Enter your sentence : ");
+	scanf("%s",stack);
+
+	int i = 0;
+	while(stack[i] != '\0')
+	{
+		push(stack[i]);
+
+		i++;
+	}
+
+	return 0;
+}
+
+int push
