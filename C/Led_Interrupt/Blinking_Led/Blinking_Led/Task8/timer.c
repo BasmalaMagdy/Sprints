@@ -1,310 +1,254 @@
-/*----------------------------------------------------------------------------------------------
- *  * Module: Timer
+/********************************************************************************
  * File Name: timer.c
- * AUTHOR: Bassnat Yasser
- * Data Created: 5 / 9 / 2021
- * Description: Source file for the Timer AVR driver
- ------------------------------------------------------------------------------------------------*/
+ *
+ * Author: Basmala Magdy
+ *
+ * Created on: Sep 2, 2021
+ *
+ * Description: timer driver
+ *******************************************************************************/
 
 #include "timer.h"
+//#include "micro_config.h"
 
-/*******************************************************************************
- *                           Global Variables                                  *
- *******************************************************************************/
+/*********************************************************************************************************************
+ *                                                      Global Variables                                             *
+ *********************************************************************************************************************/
 
-/* Global variables to hold the address of the call back function in the application */
-static volatile void (*g_Timer0callBackPtr)(void) = NULL_PTR;
-static volatile void (*g_Timer1callBackPtr)(void) = NULL_PTR;
-static volatile void (*g_Timer2callBackPtr)(void) = NULL_PTR;
+/*Global variables to get the addresses of the call back functions in the application*/
+static volatile void (*g_t0_ovf_callBackPtr)(void) = NULL_PTR; /*Timer0,overflow mode*/
+static volatile void (*g_t0_ctc_callBackPtr)(void) = NULL_PTR; /*Timer0,compare mode*/
+static volatile void (*g_t1_ovf_callBackPtr)(void) = NULL_PTR; /*Timer1,overflow mode*/
+static volatile void (*g_t1_ctc_callBackPtr)(void) = NULL_PTR; /*Timer1,compare mode*/
+static volatile void (*g_t2_ovf_callBackPtr)(void) = NULL_PTR; /*Timer2,overflow mode*/
+static volatile void (*g_t2_ctc_callBackPtr)(void) = NULL_PTR; /*Timer2,compare mode*/
 
-uint8 g_timer_number;
-/*******************************************************************************
- *                       Interrupt Service Routines                            *
- *******************************************************************************/
+static volatile uint8 prescalar;
+/*********************************************************************************************************************
+ *                                                Interrupt Service Routines                                         *
+ *********************************************************************************************************************/
 
 ISR(TIMER0_OVF_vect)
 {
-	if(g_Timer0callBackPtr != NULL_PTR)
+	if(g_t0_ovf_callBackPtr != NULL_PTR)
 	{
-		/* Call the Call Back function in the application after the overflow is detected */
-		(*g_Timer0callBackPtr)(); /* another method to call the function using pointer to function g_callBackPtr(); */
+		/* Call the Call Back function in the application after each overflow */
+		(*g_t0_ovf_callBackPtr)();
+		/* another method to call the function using pointer to function t0_ovf_callBackPtr(); */
 	}
 }
-
 ISR(TIMER0_COMP_vect)
 {
-	if(g_Timer0callBackPtr != NULL_PTR)
+	if(g_t0_ctc_callBackPtr != NULL_PTR)
 	{
-		/* Call the Call Back function in the application after the compare value is detected */
-		(*g_Timer0callBackPtr)(); /* another method to call the function using pointer to function g_callBackPtr(); */
+		/* Call the Call Back function in the application
+		 * after the timer reach the compare value
+		 */
+		(*g_t0_ctc_callBackPtr)();
+		/* another method to call the function using pointer to function t0_ctc_callBackPtr(); */
 	}
 }
-
-
 ISR(TIMER1_OVF_vect)
 {
-
-	if(g_Timer1callBackPtr != NULL_PTR)
+	if(g_t1_ovf_callBackPtr != NULL_PTR)
 	{
-
-		/* Call the Call Back function in the application after the overflow is detected */
-		(*g_Timer1callBackPtr)(); /* another method to call the function using pointer to function g_callBackPtr(); */
+		/* Call the Call Back function in the application after each overflow */
+		(*g_t1_ovf_callBackPtr)();
+		/* another method to call the function using pointer to function t1_ovf_callBackPtr(); */
 	}
 }
-
 ISR(TIMER1_COMPA_vect)
 {
-	if(g_Timer1callBackPtr != NULL_PTR)
+	if(g_t1_ctc_callBackPtr != NULL_PTR)
 	{
-		/* Call the Call Back function in the application after the compare value is detected */
-		(*g_Timer1callBackPtr)(); /* another method to call the function using pointer to function g_callBackPtr(); */
+		/* Call the Call Back function in the application
+		 * after the timer reach the compare value
+		 */
+		(*g_t1_ctc_callBackPtr)();
+		/* another method to call the function using pointer to function t1_ctc_callBackPtr(); */
 	}
 }
-
-
-ISR(TIMER1_COMPB_vect)
-{
-	if(g_Timer1callBackPtr != NULL_PTR)
-	{
-		/* Call the Call Back function in the application after the compare value is detected */
-		(*g_Timer1callBackPtr)(); /* another method to call the function using pointer to function g_callBackPtr(); */
-	}
-}
-
-
 ISR(TIMER2_OVF_vect)
 {
-	if(g_Timer2callBackPtr != NULL_PTR)
+	if(g_t2_ovf_callBackPtr != NULL_PTR)
 	{
-		/* Call the Call Back function in the application after the overflow is detected */
-		(*g_Timer2callBackPtr)(); /* another method to call the function using pointer to function g_Timer2callBackPtr(); */
+		/* Call the Call Back function in the application after each overflow */
+		(*g_t2_ovf_callBackPtr)();
+		/* another method to call the function using pointer to function t2_ovf_callBackPtr(); */
 	}
 }
-
 ISR(TIMER2_COMP_vect)
 {
-	if(g_Timer2callBackPtr != NULL_PTR)
+	if(g_t2_ctc_callBackPtr != NULL_PTR)
 	{
-		/* Call the Call Back function in the application after the compare value is detected */
-		(*g_Timer2callBackPtr)(); /* another method to call the function using pointer to function g_Timer2callBackPtr(); */
+		/* Call the Call Back function in the application
+		 * after the timer reach the compare value
+		 */
+		(*g_t2_ctc_callBackPtr)();
+		/* another method to call the function using pointer to function t2_ctc_callBackPtr(); */
 	}
 }
 
-/*******************************************************************************
- *                      Functions Definitions                                  *
- *******************************************************************************/
-
-
+/*********************************************************************************************************************
+ *                                                Functions Definitions                                        *
+ *********************************************************************************************************************/
+/*
+ * Function that initialize the timer
+ * Given timer and the mode, it initiate the registers
+ * the initial value and the compare value
+ */
 void Timer_init(const Timer_ConfigType * Config_Ptr)
 {
-	/* Saves timer_number in global variable */
-	g_timer_number = Config_Ptr->timer_number;
-
-	/* Adjust bits of timer0 */
-	if(g_timer_number == Timer0)
+	if(Config_Ptr->type  == TIMER0)
 	{
-		/* Non PWM Mode */
-		TCCR0 = (1<<FOC0);
+		TCNT0 = Config_Ptr->s_init; /*Put the initial value in TCNT0*/
+		TCCR0 = (1<<FOC0); /*Non PWM mode FOC0=1*/
+		TCCR0 = (TCCR0 & 0xF8) | (prescalar);
 
-		/* Set Timer initial value */
-		TCNT0 = Config_Ptr->initial_value;
-
-		if(Config_Ptr->mode == NORMAL)
+		if(Config_Ptr->mode == OVERFLOW)
 		{
-			/* Enable Timer0 Overflow Interrupt */
-			TIMSK |= (1<<TOIE0);
+			TIMSK |= (1<<TOIE0); // Enable Timer0 Overflow Interrupt
+			/* Configure the timer control register
+			 * 2. Normal Mode WGM01=0 & WGM00=0
+			 * 3. Normal Mode COM00=0 & COM01=0
+			 */
 		}
 		else if(Config_Ptr->mode == COMPARE)
 		{
-			/* CTC Mode WGM01=1 & WGM00=0 */
-			TCCR0 |= (1<<WGM01);
-
-			/* Set Compare Value */
-			OCR0 = Config_Ptr->compare_value;
-
-			/* Enable Timer0 Compare Interrupt */
-			TIMSK |= (1<<OCIE0);
-		}
-
-		/* adjust clock mode */
-		if(Config_Ptr->clock == F_CPU_CLOCK)
-		{
-			TCCR0 |= (1<<CS00);
-		}
-		else if(Config_Ptr->clock == F_CPU_8)
-		{
-			TCCR0 |= (1<<CS01);
-		}
-		else if(Config_Ptr->clock == F_CPU_64)
-		{
-			TCCR0 |= (1<<CS00) | (1<<CS01);
-		}
-		else if(Config_Ptr->clock == F_CPU_256)
-		{
-			TCCR0 |= (1<<CS02);
-		}
-		else if(Config_Ptr->clock == F_CPU_1024)
-		{
-			TCCR0 |= (1<<CS00) | (1<<CS02);
+			OCR0  = Config_Ptr->s_compare; /* Set Compare Value*/
+			TIMSK |= (1<<OCIE0); // Enable Timer0 Compare Interrupt
+			/* Configure timer0 control register
+			 * 2. CTC Mode WGM01=1 & WGM00=0
+			 * 3. No need for OC0 in this example so COM00=0 & COM01=0
+			 */
+			TCCR0 = (1<<WGM01);
 		}
 	}
-	else if(g_timer_number == Timer1)
+	else if(Config_Ptr->type  == TIMER1)
 	{
-		/* Non PWM Mode */
 		TCCR1A = (1<<FOC1A) | (1<<FOC1B);
-
-		/* Set Timer initial value */
-		TCNT1 = Config_Ptr->initial_value;
-
-		if(Config_Ptr->mode == NORMAL)
+		TCCR1B = (TCCR1B & 0xF8) | (prescalar); /*Put the prescalar in the first 3-bits*/
+		TCNT1 = Config_Ptr->s_init;
+		if(Config_Ptr->mode == OVERFLOW)
 		{
-			TCCR1B = 0;
-
-			/* Enable Timer1 Overflow Interrupt */
-			TIMSK |= (1<<TOIE1);
-		}
-		else if(Config_Ptr->mode == COMPAREA)
-		{
-			/*  CTC Mode WGM12=1 WGM13=0 (Mode Number 4) */
-			TCCR1B = (1<<WGM12);
-
-			/* Set Compare Value */
-			OCR1A = Config_Ptr->compare_value;
-
-			/* Enable Timer1 Compare A Interrupt */
-			TIMSK |= (1<<OCIE1A);
-		}
-		else if(Config_Ptr->mode == COMPAREB)
-		{
-			/*  CTC Mode WGM12=1 WGM13=1 (Mode Number 12) */
-			TCCR1B = (1<<WGM12) | (1<<WGM13);
-
-			/* Set Compare Value */
-			OCR1B = Config_Ptr->compare_value;
-
-			/* Enable Timer1 Compare B Interrupt */
-			TIMSK |= (1<<OCIE1B);
-		}
-
-		/* adjust clock mode */
-		if(Config_Ptr->clock == F_CPU_CLOCK)
-		{
-			TCCR1B |= (1<<CS10);
-		}
-		else if(Config_Ptr->clock == F_CPU_8)
-		{
-			TCCR1B |= (1<<CS11);
-		}
-		else if(Config_Ptr->clock == F_CPU_64)
-		{
-			TCCR1B |= (1<<CS10) | (1<<CS11);
-		}
-		else if(Config_Ptr->clock == F_CPU_256)
-		{
-			TCCR1B |= (1<<CS12);
-		}
-		else if(Config_Ptr->clock == F_CPU_1024)
-		{
-			TCCR1B |= (1<<CS10) | (1<<CS12);
-		}
-
-	}
-	else if(g_timer_number == Timer2)
-	{
-		/* Non PWM Mode */
-		TCCR2 = (1<<FOC2);
-
-		/* Set Timer initial value */
-		TCNT2 = Config_Ptr->initial_value;
-
-		if(Config_Ptr->mode == NORMAL)
-		{
-			/* Enable Timer2 Overflow Interrupt */
-			TIMSK |= (1<<TOIE2);
+			TIMSK = (1<<TOIE1); /*TOIE1=1: Enable overflow interrupt*/
 		}
 		else if(Config_Ptr->mode == COMPARE)
 		{
-			/* CTC Mode WGM21=1 & WGM20=0 */
+			TCCR1B = (1<<WGM12); /*WGM12=1: Compare mode (Mode 12)*/
+			OCR1A = Config_Ptr->s_compare; /* compare value in OCR1A mode 4*/
+			
+			if(Config_Ptr->interrupt){
+				/*OCIE1A=1: Enable output compare A match interrupt*/
+				TIMSK |= (1 << OCIE1A);
+			}
+			
+
+		}
+	}
+	else if(Config_Ptr->type  == TIMER2)
+	{
+		TCCR2= (1<<FOC2);
+		TCCR2 = (TCCR2 & 0xF8) | (Config_Ptr->prescalar);
+		TCNT2 = Config_Ptr->s_init;
+		if(Config_Ptr->mode == OVERFLOW)
+		{
+			TIMSK = (1<<TOIE2); /*TOIE1=2: Enable overflow interrupt*/
+		}
+		else if(Config_Ptr->mode == COMPARE)
+		{
 			TCCR2 |= (1<<WGM21);
-
-			/* Set Timer compare value */
-			OCR2 = Config_Ptr->compare_value;
-
-			/* Enable Timer0 COMPARE Interrupt */
-			TIMSK |= (1<<OCIE2);
+			OCR2 = Config_Ptr->s_compare;
+			TIMSK = (1<<OCIE2);
 		}
-
-		/* adjust clock mode */
-		if(Config_Ptr->clock == F_CPU_CLOCK)
-		{
-			TCCR2 |= (1<<CS20);
-		}
-		else if(Config_Ptr->clock == F_CPU_8)
-		{
-			TCCR2 |= (1<<CS21);
-		}
-		else if(Config_Ptr->clock == F_CPU_32)
-		{
-			TCCR2 |= (1<<CS20) | (1<<CS21);
-		}
-		else if(Config_Ptr->clock == F_CPU_64)
-		{
-			TCCR2 |= (1<<CS22);
-		}
-		else if(Config_Ptr->clock == F_CPU_256)
-		{
-			TCCR2 |= (1<<CS21) | (1<<CS22);
-		}
-		else if(Config_Ptr->clock == F_CPU_1024)
-		{
-			TCCR2 |= (1<<CS20) | (1<<CS21) | (1<<CS22);
-		}
-
 	}
 
 
+	if((Config_Ptr->prescalar) == NO_CLOCK)
+	{
+		prescalar = 0;  /*If it is NO_CLOCK , it should be 0*/
+	}
+	else if((Config_Ptr->prescalar) == F_CPU_CLOCK)
+	{
+		prescalar = 1; /*If it is F_CPU_CLOCK , it should be 1*/
+	}
+	else if((Config_Ptr->prescalar) == F_CPU_8)
+	{
+		prescalar = 2;/*If it is F_CPU_8 , it should be 2*/
+	}
+	else if((Config_Ptr->prescalar) == F_CPU_64)
+	{
+		prescalar = 3;/*If it is F_CPU_64 , it should be 3*/
+	}
+	else if((Config_Ptr->prescalar) == F_CPU_256)
+	{
+		prescalar = 4;/*If it is F_CPU_64, it should be 4*/
+	}
+	else if((Config_Ptr->prescalar) == F_CPU_1024)
+	{
+		prescalar = 5;/*If it is F_CPU_64 , it should be 5*/
+	}
+}
+/*Function to stop timer*/
+void Timer_stop(void)
+{
+	TCCR0 = (TCCR0 & 0xF8) | (0);
+}
+/*Function to start timer*/
+void Timer_start(void)
+{
+	TCNT0 = 0;
+	TCCR0 = (TCCR0 & 0xF8) | (prescalar);
 }
 
-/*
- * Description: Function to set the Call Back function address.
- */
-void Timer_setCallBack(void(*a_ptr)(void))
+/*Function to set the Call Back function address for Timer0, overflow mode*/
+void Timer0_Ovf_setCallBack(void(*a_t0_ovf_ptr)(void))
 {
-
 	/* Save the address of the Call back function in a global variable */
-	if(g_timer_number == Timer0)
-	{
-		g_Timer0callBackPtr = a_ptr;
-	}
-	else if(g_timer_number == Timer1)
-	{
-		g_Timer1callBackPtr = a_ptr;
-	}
-	else if(g_timer_number == Timer2)
-	{
-		g_Timer2callBackPtr = a_ptr;
-	}
-
+	g_t0_ovf_callBackPtr = a_t0_ovf_ptr;
 }
 
-/*
- * Description: Function to stop the timer.
- */
-
-void Timer_stop(uint8 a_timer_number)
+/*Function to set the Call Back function address for Timer0, compare mode*/
+void Timer0_CTC_setCallBack(void(*a_t0_ctc_ptr)(void))
 {
-	if(a_timer_number == Timer0)
-	{
-		TCCR0 = 0;
-	}
-	else if(a_timer_number == Timer1)
-	{
-		TCCR1B = 0;
-	}
-	else if(a_timer_number == Timer2)
-	{
-		TCCR2 = 0;
-	}
-
+	/* Save the address of the Call back function in a global variable */
+	g_t0_ctc_callBackPtr = a_t0_ctc_ptr;
 }
+
+/*Function to set the Call Back function address for Timer1, overflow mode*/
+void Timer1_Ovf_setCallBack(void(*a_t1_ovf_ptr)(void))
+{
+	/* Save the address of the Call back function in a global variable */
+	g_t1_ovf_callBackPtr = a_t1_ovf_ptr;
+}
+
+/*Function to set the Call Back function address for Timer1, compare mode*/
+void Timer1_CTC_setCallBack(void(*a_t1_ctc_ptr)(void))
+{
+	/* Save the address of the Call back function in a global variable */
+	g_t1_ctc_callBackPtr = a_t1_ctc_ptr;
+}
+
+/*Function to set the Call Back function address for Timer2, overflow mode*/
+void Timer2_Ovf_setCallBack(void(*a_t2_ovf_ptr)(void))
+{
+	/* Save the address of the Call back function in a global variable */
+	g_t2_ovf_callBackPtr = a_t2_ovf_ptr;
+}
+
+/*Function to set the Call Back function address for Timer2, compare mode*/
+void Timer2_CTC_setCallBack(void(*a_t2_ctc_ptr)(void))
+{
+	/* Save the address of the Call back function in a global variable */
+	g_t2_ctc_callBackPtr = a_t2_ctc_ptr;
+}
+
+
+
+
+
+
+
+
+
 
