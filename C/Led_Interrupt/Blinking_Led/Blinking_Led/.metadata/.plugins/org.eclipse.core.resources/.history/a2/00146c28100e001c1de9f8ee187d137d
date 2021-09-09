@@ -1,0 +1,19 @@
+/*
+ * registers.h
+ *
+ *  Created on: Sep 5, 2021
+ *      Author: Ahmed Yasser
+ */
+
+#ifndef REGISTERS_H_
+#define REGISTERS_H_
+
+#define PORTC_DIR	*((volatile uint8_t*)(0x34))
+
+#define PORTC_OUT	*((volatile uint8_t*)(0x35))
+
+//#define SREG 		(*(volatile uint8_t *)(0x3F))
+
+
+
+#endif /* REGISTERS_H_ */

@@ -1,0 +1,45 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 4, 2021
+ *      Author: Bassant Yasser
+ */
+#include "timer.h"
+
+void toggle_led();
+
+
+/* global variable contain the ticks count of the timer */
+unsigned char g_tick = 0;
+
+int main()
+{
+	/* Configure the led pin as output pin. */
+	DDRC  |= (1<<PC0);
+
+	/* LED is off at the beginning (Positive Logic). */
+	PORTC &= ~(1<<PC0);
+
+
+	/* Enable global interrupts in MC. */
+	SREG  |= (1<<7);
+
+	/* Create configuration structure for Timer driver */
+	Timer_ConfigType Config_Ptr = {TIMER0, COMPARE, F_CPU_1024, 0, 150};
+
+	Timer_init(&Config_Ptr);
+
+	Timer0_CTC_setCallBack(toggle_led);
+
+}
+
+void toggle_led()
+{
+	g_tick++;
+	if(g_tick == 2)
+	{
+		PORTC ^= (1<<PC0);
+		g_tick = 0;
+	}
+
+}
