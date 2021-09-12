@@ -1,0 +1,51 @@
+/*
+ * File Name: main.c
+ * Description: Source file for main app
+ * Created on: Sep 5, 2021
+ * Author: Sarah
+ */
+
+/*****************************************************
+ *                   INCLUDES
+ *****************************************************/
+//#include "motor.h"
+#include "buttons.h"
+
+#define PASS_LENGTH 5
+#define F_CPU 1000000
+
+/*****************************************************
+ *                   Global Variables
+ *****************************************************/
+char button;
+/*****************************************************
+ *                   FUNCTION Prototypes
+ *****************************************************/
+
+/*****************************************************
+ *                   MAIN FUNCTION
+ *****************************************************/
+int main(void){
+	/*Initializations*/
+	//button_init();
+	motor_init();
+	/* button Structure for its configurations */
+	PORT_Config_t PORT_Struct;
+	PORT_Struct.Data = 0;/*initially off*/
+	PORT_Struct.direction = INPUT;
+	PORT_Struct.port = A;
+	Port_Init(PORT_Struct);
+
+	while(1)
+	{
+		switch(){
+
+		}
+
+	}
+}
+
+
+/*****************************************************
+ *                   FUNCTION Definitions
+ *****************************************************/

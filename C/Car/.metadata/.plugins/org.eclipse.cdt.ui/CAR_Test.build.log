@@ -1,0 +1,39 @@
+17:52:11 **** Incremental Build of configuration Debug for project CAR_Test ****
+make all 
+Building file: ../Application/App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Application/App.d" -MT"Application/App.o" -c -o "Application/App.o" "../Application/App.c"
+Finished building: ../Application/App.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: CAR_Test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,CAR_Test.map -mmcu=atmega32 -o "CAR_Test.elf"  ./MCAL/Timer/timer.o  ./MCAL/DIO/DIO.o  ./ECUAL/Motor/motors.o  ./ECUAL/Button/buttons.o  ./Application/App.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
+Finished building target: CAR_Test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S CAR_Test.elf  >"CAR_Test.lss"
+Finished building: CAR_Test.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CAR_Test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4326 bytes (13.2% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+17:52:12 Build Finished. 0 errors, 0 warnings. (took 1s.347ms)
+

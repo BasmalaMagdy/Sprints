@@ -1,0 +1,190 @@
+/*
+ * File Name: main.c
+ * Description: Source file for main app
+ * Created on: Sep 5, 2021
+ * Author: Sarah
+ */
+
+/*****************************************************
+ *                   INCLUDES
+ *****************************************************/
+
+#include "ECUAL/Button/buttons.h"
+#include "ECUAL/Motor/motors.h"
+#include "micro_config.h"
+
+/*****************************************************
+ *                   Global Variables
+ *****************************************************/
+static uint8_t sp = 30;
+static Direction direct = Forward;
+static uint8_t count = 0;
+static uint8_t flag[5] = {0};
+
+/*****************************************************
+ *                   MAIN FUNCTION
+ *****************************************************/
+int main(void){
+	/*Initializations*/
+	motor_init();
+	motor_start(30, Forward);
+	button_init();
+
+	while(1)
+	{
+
+		// check if the push button at PB0 is pressed or not
+		if(button_read() == 0 )
+		{
+			if(button_read() == 0)
+			{
+				if(flag[0] == 0)
+				{
+					motor_stop();// Toggle value of pin 0 in PORTC (LED Toggle)
+					//set the button flag value to 1 to not enter here again until the button is released.
+					flag[0] = 1;
+				}
+			}
+		}
+		else
+		{
+			// button is released reset the button flag to value 0 again.
+			flag[0] = 0;
+		}
+		// check if the push button at PB0 is pressed or not
+		if(button_read() == 1)
+		{
+			if(button_read() == 1)
+			{
+				if(flag[1] == 0)
+				{
+					motor_start(30, Left);// Toggle value of pin 0 in PORTC (LED Toggle)
+					//set the button flag value to 1 to not enter here again until the button is released.
+					flag[1] = 1;
+				}
+			}
+		}
+		else
+		{
+			// button is released reset the button flag to value 0 again.
+			flag[1] = 0;
+		}
+		// check if the push button at PB0 is pressed or not
+		if(button_read() == 2)
+		{
+			if(button_read() == 2)
+			{
+				if(flag[2] == 0)
+				{
+					motor_start(30, Right);// Toggle value of pin 0 in PORTC (LED Toggle)
+					//set the button flag value to 1 to not enter here again until the button is released.
+					flag[2] = 1;
+				}
+			}
+		}
+		else
+		{
+			// button is released reset the button flag to value 0 again.
+			flag[2] = 0;
+		}
+		// check if the push button at PB0 is pressed or not
+		if(button_read() == 4)
+		{
+			if(button_read() == 4)
+			{
+				if(flag[3] == 0)
+				{
+					motor_start(sp, direct);// Toggle value of pin 0 in PORTC (LED Toggle)
+					//set the button flag value to 1 to not enter here again until the button is released.
+					flag[3] = 1;
+				}
+			}
+		}
+		else
+		{
+			// button is released reset the button flag to value 0 again.
+			flag[3] = 0;
+		}
+		// check if the push button at PB0 is pressed or not
+		if(button_read() == 8)
+		{
+			if(button_read() == 8)
+			{
+				if(flag[4] == 0)
+				{
+					if(count == 3){
+						count = 0;
+						sp = 30;
+						direct = Backward;
+					}
+					else{
+						switch(count){
+						case 0:
+							sp = 30;
+							direct = Forward;
+							break;
+						case 1:
+							sp = 60;
+							direct = Forward;
+							break;
+						case 2:
+							sp = 90;
+							direct = Forward;
+							break;
+						}
+					}
+					count++;
+					// Toggle value of pin 0 in PORTC (LED Toggle)
+					//set the button flag value to 1 to not enter here again until the button is released.
+					flag[4] = 1;
+				}
+			}
+		}
+		else
+		{
+			// button is released reset the button flag to value 0 again.
+			flag[4] = 0;
+		}
+//		switch(button_read()){
+//		case 0:
+//			motor_stop();
+//			break;
+//		case 1:
+//			motor_start(30, Left);
+//			break;
+//		case 4:
+//			motor_start(sp, direct);
+//			break;
+//		case 2:
+//			motor_start(30, Right);
+//			break;
+//
+//		case 8:
+//			if(count == 3){
+//				count = 0;
+//				sp = 30;
+//				direct = Backward;
+//			}
+//			else{
+//				switch(count){
+//				case 0:
+//					sp = 30;
+//					direct = Forward;
+//					break;
+//				case 1:
+//					sp = 60;
+//					direct = Forward;
+//					break;
+//				case 2:
+//					sp = 90;
+//					direct = Forward;
+//					break;
+//				}
+//			}
+//			count++;
+//			break;
+//		}
+	}
+	return 0;
+}
+

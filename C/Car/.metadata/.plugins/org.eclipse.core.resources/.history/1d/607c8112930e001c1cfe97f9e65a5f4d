@@ -1,0 +1,74 @@
+/*
+ * File Name: main.c
+ * Description: Source file for main app
+ * Created on: Sep 5, 2021
+ * Author: Sarah
+ */
+
+/*****************************************************
+ *                   INCLUDES
+ *****************************************************/
+
+#include "ECUAL/Button/buttons.h"
+#include "ECUAL/LED/LED_driver.h"
+#include "micro_config.h"
+
+/*****************************************************
+ *                   Global Variables
+ *****************************************************/
+uint8_t button;
+uint8_t speed;
+Direction direct;
+uint8_t count = 0;
+
+/*****************************************************
+ *                   MAIN FUNCTION
+ *****************************************************/
+int main(void){
+	/*Initializations*/
+	motor_init();
+	motor_start(30, Forward);
+	button_init();
+	LED_Init();
+
+
+	while(1)
+	{
+		switch(button_read()){
+		case 0:
+			motor_stop();
+			break;
+		case 5:
+			set_direction(Left);
+			break;
+		case 6:
+			set_direction(Right);
+			break;
+		case 4:
+			motor_start(speed, direct);
+			break;
+		case 12:
+			count++;
+			if(count == 4){
+				count = 1;
+				motor_start(30, Backward);
+			}
+			else{
+				switch(count){
+				case 1:
+					motor_start(30, Forward);
+					break;
+				case 2:
+					motor_start(60, Forward);
+					break;
+				case 3:
+					motor_start(90, Forward);
+					break;
+				}
+			}
+			break;
+		}
+	}
+	return 0;
+}
+

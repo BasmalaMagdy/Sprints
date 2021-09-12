@@ -1,0 +1,25 @@
+/*
+ * buttons.c
+ *
+ *  Created on: Sep 5, 2021
+ *      Author: Lenovo
+ */
+
+#include "buttons.h"
+
+uint8_t button_read(PORT_Config_t *Port){
+	switch(Port->port){
+		case A:
+			Port->Data= PORTA_IN;
+			break;
+		case B:
+			Port->Data= PORTB_IN;
+			break;
+		case C:
+			Port->Data= PORTC_IN;
+			break;
+		case D:
+			Port->Data= PORTD_IN;
+			break;
+		}
+}

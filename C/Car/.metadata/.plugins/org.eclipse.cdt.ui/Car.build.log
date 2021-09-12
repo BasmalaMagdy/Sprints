@@ -1,0 +1,46 @@
+22:30:04 **** Incremental Build of configuration Debug for project Car ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+In file included from ../DIO.c:10:
+../DIO.h:13:26: error: ../registers.h: No such file or directory
+In file included from ../DIO.c:10:
+../DIO.h:35: error: expected specifier-qualifier-list before 'uint8_t'
+../DIO.c: In function 'Port_Init':
+../DIO.c:17: error: 'PORT_Config_t' has no member named 'port'
+../DIO.c:19: error: 'PORTA_DIR' undeclared (first use in this function)
+../DIO.c:19: error: (Each undeclared identifier is reported only once
+../DIO.c:19: error: for each function it appears in.)
+../DIO.c:19: error: 'PORT_Config_t' has no member named 'direction'
+../DIO.c:22: error: 'PORTB_DIR' undeclared (first use in this function)
+../DIO.c:22: error: 'PORT_Config_t' has no member named 'direction'
+../DIO.c:25: error: 'PORTC_DIR' undeclared (first use in this function)
+../DIO.c:25: error: 'PORT_Config_t' has no member named 'direction'
+../DIO.c:28: error: 'PORTD_DIR' undeclared (first use in this function)
+../DIO.c:28: error: 'PORT_Config_t' has no member named 'direction'
+../DIO.c: In function 'Write_Port':
+../DIO.c:34: error: 'PORT_Config_t' has no member named 'port'
+../DIO.c:36: error: 'PORTA_OUT' undeclared (first use in this function)
+../DIO.c:36: error: 'PORT_Config_t' has no member named 'Data'
+../DIO.c:39: error: 'PORTB_OUT' undeclared (first use in this function)
+../DIO.c:39: error: 'PORT_Config_t' has no member named 'Data'
+../DIO.c:42: error: 'PORTC_OUT' undeclared (first use in this function)
+../DIO.c:42: error: 'PORT_Config_t' has no member named 'Data'
+../DIO.c:45: error: 'PORTD_OUT' undeclared (first use in this function)
+../DIO.c:45: error: 'PORT_Config_t' has no member named 'Data'
+../DIO.c: In function 'Read_Port':
+../DIO.c:51: error: 'PORT_Config_t' has no member named 'port'
+../DIO.c:53: error: 'PORT_Config_t' has no member named 'Data'
+../DIO.c:53: error: 'PORTA_IN' undeclared (first use in this function)
+../DIO.c:56: error: 'PORT_Config_t' has no member named 'Data'
+../DIO.c:56: error: 'PORTB_IN' undeclared (first use in this function)
+../DIO.c:59: error: 'PORT_Config_t' has no member named 'Data'
+../DIO.c:59: error: 'PORTC_IN' undeclared (first use in this function)
+../DIO.c:62: error: 'PORT_Config_t' has no member named 'Data'
+../DIO.c:62: error: 'PORTD_IN' undeclared (first use in this function)
+make: *** [DIO.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+22:30:05 Build Failed. 30 errors, 0 warnings. (took 799ms)
+

@@ -1,0 +1,27 @@
+/*
+ * buttons.c
+ *
+ *  Created on: Sep 5, 2021
+ *      Author: Lenovo
+ */
+
+#include "buttons.h"
+void button_init(){
+	PORT_Config_t PORT_Struct;
+	PORT_Struct.Data = 0;/*initially off*/
+	PORT_Struct.direction = 0x0F;
+	PORT_Struct.port = A;
+}
+uint8_t button_read(PORT_Config_t *Port){
+	switch(Port->Data){
+		case 0:
+			return 'L';
+		case 1:
+			return 'R';
+		case 2:
+			return 'M';
+		case 3:
+			return 'G';
+	}
+
+}

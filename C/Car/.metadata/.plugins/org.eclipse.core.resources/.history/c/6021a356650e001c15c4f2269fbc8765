@@ -1,0 +1,28 @@
+/*
+ * buttons.h
+ *
+ *  Created on: Sep 5, 2021
+ *      Author: Lenovo
+ */
+
+#ifndef BUTTONS_H_
+#define BUTTONS_H_
+
+#include "std_types.h"
+#include "common_macros.h"
+#include "registers.h"
+
+/*******************************************************************************
+ *                      Preprocessor Macros                                    *
+ *******************************************************************************/
+#define L 0
+#define R 1
+#define M 2
+#define G 3
+
+/*******************************************************************************
+ *                      Functions Prototypes                                   *
+ *******************************************************************************/
+//uint8_t button_read(PORT_Config_t *Port);
+
+#endif /* BUTTONS_H_ */
