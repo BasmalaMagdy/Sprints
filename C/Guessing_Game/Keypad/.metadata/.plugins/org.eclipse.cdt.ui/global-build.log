@@ -1,0 +1,1604 @@
+18:18:28 **** Build of configuration Debug for project guess_game_keypad ****
+make all 
+Building file: ../keypad/keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"keypad/keypad.d" -MT"keypad/keypad.o" -c -o "keypad/keypad.o" "../keypad/keypad.c"
+In file included from ../keypad/keypad.c:13:
+../keypad/keypad.h:16:23: error: std_types.h: No such file or directory
+../keypad/keypad.h:17:26: error: micro_config.h: No such file or directory
+../keypad/keypad.h:18:27: error: common_macros.h: No such file or directory
+In file included from ../keypad/keypad.c:13:
+../keypad/keypad.h:40: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'KeyPad_getPressedKey'
+../keypad/keypad.c:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'KeyPad_4x4_adjustKeyNumber'
+../keypad/keypad.c:36: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'KeyPad_getPressedKey'
+../keypad/keypad.c:86: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'KeyPad_4x4_adjustKeyNumber'
+make: *** [keypad/keypad.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:18:45 **** Incremental Build of configuration Debug for project guess_game_keypad ****
+make all 
+Building file: ../keypad/keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"keypad/keypad.d" -MT"keypad/keypad.o" -c -o "keypad/keypad.o" "../keypad/keypad.c"
+In file included from ../keypad/keypad.c:13:
+../keypad/keypad.h:16:23: error: std_types.h: No such file or directory
+../keypad/keypad.h:17:26: error: micro_config.h: No such file or directory
+../keypad/keypad.h:18:27: error: common_macros.h: No such file or directory
+In file included from ../keypad/keypad.c:13:
+../keypad/keypad.h:40: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'KeyPad_getPressedKey'
+../keypad/keypad.c:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'KeyPad_4x4_adjustKeyNumber'
+../keypad/keypad.c:36: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'KeyPad_getPressedKey'
+../keypad/keypad.c:86: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'KeyPad_4x4_adjustKeyNumber'
+make: *** [keypad/keypad.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:18:57 **** Incremental Build of configuration Debug for project guess_game_keypad ****
+make all 
+Building file: ../keypad/keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"keypad/keypad.d" -MT"keypad/keypad.o" -c -o "keypad/keypad.o" "../keypad/keypad.c"
+In file included from ../keypad/keypad.c:13:
+../keypad/keypad.h:16:23: error: std_types.h: No such file or directory
+../keypad/keypad.h:17:26: error: micro_config.h: No such file or directory
+../keypad/keypad.h:18:27: error: common_macros.h: No such file or directory
+In file included from ../keypad/keypad.c:13:
+../keypad/keypad.h:40: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'KeyPad_getPressedKey'
+../keypad/keypad.c:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'KeyPad_4x4_adjustKeyNumber'
+../keypad/keypad.c:36: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'KeyPad_getPressedKey'
+../keypad/keypad.c:86: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'KeyPad_4x4_adjustKeyNumber'
+make: *** [keypad/keypad.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:19:17 **** Incremental Build of configuration Debug for project guess_game_keypad ****
+make all 
+Building file: ../keypad/keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"keypad/keypad.d" -MT"keypad/keypad.o" -c -o "keypad/keypad.o" "../keypad/keypad.c"
+In file included from ../keypad/../micro_config.h:21,
+                 from ../keypad/keypad.h:17,
+                 from ../keypad/keypad.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../keypad/keypad.c:13:
+../keypad/keypad.h:40: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'KeyPad_getPressedKey'
+make: *** [keypad/keypad.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:19:27 **** Incremental Build of configuration Debug for project guess_game_keypad ****
+make all 
+Building file: ../keypad/keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"keypad/keypad.d" -MT"keypad/keypad.o" -c -o "keypad/keypad.o" "../keypad/keypad.c"
+In file included from ../keypad/../micro_config.h:21,
+                 from ../keypad/keypad.h:17,
+                 from ../keypad/keypad.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../keypad/keypad.c
+ 
+Building file: ../MCAL/DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/DIO.d" -MT"MCAL/DIO.o" -c -o "MCAL/DIO.o" "../MCAL/DIO.c"
+Finished building: ../MCAL/DIO.c
+ 
+Building file: ../LCD/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LCD/lcd.d" -MT"LCD/lcd.o" -c -o "LCD/lcd.o" "../LCD/lcd.c"
+In file included from ../LCD/../micro_config.h:21,
+                 from ../LCD/lcd.h:18,
+                 from ../LCD/lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD/lcd.c: In function 'LCD_intgerToString':
+../LCD/lcd.c:107: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD/lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../LCD/../micro_config.h:21,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:35:1: warning: "SREG" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:410,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/common.h:103:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:38:1: warning: "TCCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:393:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:40:1: warning: "TCNT0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:391:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:41:1: warning: "OCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:472:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:42:1: warning: "TIMSK" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:450:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:52:1: warning: "TCNT1" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:348:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:53:1: warning: "TCCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:362:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:57:1: warning: "OCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:342:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:58:1: warning: "OCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:336:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:60:1: warning: "TCCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:353:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:62:1: warning: "TCNT2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:317:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:63:1: warning: "OCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:315:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:64:1: warning: "TCCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:319:1: warning: this is the location of the previous definition
+../main.c: In function 'main':
+../main.c:27: warning: implicit declaration of function 'Button_Init'
+../main.c:47: warning: implicit declaration of function 'Check_Button'
+../main.c: In function 'Timer1_INT':
+../main.c:73: warning: implicit declaration of function 'rand'
+Finished building: ../main.c
+ 
+Building file: ../timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"timer.d" -MT"timer.o" -c -o "timer.o" "../timer.c"
+../timer.c: In function 'Timer0_setCallBack':
+../timer.c:270: warning: function return types not compatible due to 'volatile'
+../timer.c: In function 'Timer1_setCallBack':
+../timer.c:275: warning: function return types not compatible due to 'volatile'
+../timer.c: In function 'Timer2_setCallBack':
+../timer.c:280: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer.c
+ 
+Building target: guess_game_keypad.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,guess_game_keypad.map -mmcu=atmega16 -o "guess_game_keypad.elf"  ./keypad/keypad.o  ./MCAL/DIO.o  ./LCD/lcd.o  ./main.o ./timer.o   
+./main.o: In function `main':
+../main.c:27: undefined reference to `Button_Init'
+../main.c:47: undefined reference to `Check_Button'
+make: *** [guess_game_keypad.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:20:03 **** Incremental Build of configuration Debug for project guess_game_keypad ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../LCD/../micro_config.h:21,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:35:1: warning: "SREG" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:410,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/common.h:103:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:38:1: warning: "TCCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:393:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:40:1: warning: "TCNT0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:391:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:41:1: warning: "OCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:472:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:42:1: warning: "TIMSK" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:450:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:52:1: warning: "TCNT1" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:348:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:53:1: warning: "TCCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:362:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:57:1: warning: "OCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:342:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:58:1: warning: "OCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:336:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:60:1: warning: "TCCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:353:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:62:1: warning: "TCNT2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:317:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:63:1: warning: "OCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:315:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:64:1: warning: "TCCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:319:1: warning: this is the location of the previous definition
+../main.c: In function 'main':
+../main.c:27: warning: implicit declaration of function 'Button_Init'
+../main.c: In function 'Timer1_INT':
+../main.c:73: warning: implicit declaration of function 'rand'
+Finished building: ../main.c
+ 
+Building target: guess_game_keypad.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,guess_game_keypad.map -mmcu=atmega16 -o "guess_game_keypad.elf"  ./keypad/keypad.o  ./MCAL/DIO.o  ./LCD/lcd.o  ./main.o ./timer.o   
+./main.o: In function `main':
+../main.c:27: undefined reference to `Button_Init'
+make: *** [guess_game_keypad.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:26:44 **** Incremental Build of configuration Debug for project guess_game_keypad ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../LCD/../micro_config.h:21,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:35:1: warning: "SREG" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:410,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/common.h:103:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:38:1: warning: "TCCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:393:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:40:1: warning: "TCNT0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:391:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:41:1: warning: "OCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:472:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:42:1: warning: "TIMSK" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:450:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:52:1: warning: "TCNT1" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:348:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:53:1: warning: "TCCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:362:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:57:1: warning: "OCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:342:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:58:1: warning: "OCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:336:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:60:1: warning: "TCCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:353:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:62:1: warning: "TCNT2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:317:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:63:1: warning: "OCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:315:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:64:1: warning: "TCCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:319:1: warning: this is the location of the previous definition
+../main.c: In function 'main':
+../main.c:70: warning: implicit declaration of function 'rand'
+Finished building: ../main.c
+ 
+Building target: guess_game_keypad.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,guess_game_keypad.map -mmcu=atmega16 -o "guess_game_keypad.elf"  ./keypad/keypad.o  ./MCAL/DIO.o  ./LCD/lcd.o  ./main.o ./timer.o   
+./main.o: In function `main':
+../main.c:42: undefined reference to `Timer1_INT'
+../main.c:42: undefined reference to `Timer1_INT'
+make: *** [guess_game_keypad.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:27:14 **** Incremental Build of configuration Debug for project guess_game_keypad ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../LCD/../micro_config.h:21,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:35:1: warning: "SREG" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:410,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/common.h:103:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:38:1: warning: "TCCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:393:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:40:1: warning: "TCNT0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:391:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:41:1: warning: "OCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:472:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:42:1: warning: "TIMSK" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:450:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:52:1: warning: "TCNT1" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:348:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:53:1: warning: "TCCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:362:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:57:1: warning: "OCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:342:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:58:1: warning: "OCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:336:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:60:1: warning: "TCCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:353:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:62:1: warning: "TCNT2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:317:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:63:1: warning: "OCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:315:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:64:1: warning: "TCCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:319:1: warning: this is the location of the previous definition
+../main.c: In function 'main':
+../main.c:70: warning: implicit declaration of function 'rand'
+Finished building: ../main.c
+ 
+Building target: guess_game_keypad.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,guess_game_keypad.map -mmcu=atmega16 -o "guess_game_keypad.elf"  ./keypad/keypad.o  ./MCAL/DIO.o  ./LCD/lcd.o  ./main.o ./timer.o   
+Finished building target: guess_game_keypad.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S guess_game_keypad.elf  >"guess_game_keypad.lss"
+Finished building: guess_game_keypad.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 guess_game_keypad.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9976 bytes (60.9% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (10.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:31:36 **** Incremental Build of configuration Debug for project guess_game_keypad ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../LCD/../micro_config.h:21,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:35:1: warning: "SREG" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:410,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/common.h:103:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:38:1: warning: "TCCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:393:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:40:1: warning: "TCNT0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:391:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:41:1: warning: "OCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:472:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:42:1: warning: "TIMSK" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:450:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:52:1: warning: "TCNT1" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:348:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:53:1: warning: "TCCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:362:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:57:1: warning: "OCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:342:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:58:1: warning: "OCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:336:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:60:1: warning: "TCCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:353:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:62:1: warning: "TCNT2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:317:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:63:1: warning: "OCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:315:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:64:1: warning: "TCCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:319:1: warning: this is the location of the previous definition
+../main.c: In function 'main':
+../main.c:73: warning: implicit declaration of function 'rand'
+Finished building: ../main.c
+ 
+Building target: guess_game_keypad.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,guess_game_keypad.map -mmcu=atmega16 -o "guess_game_keypad.elf"  ./keypad/keypad.o  ./MCAL/DIO.o  ./LCD/lcd.o  ./main.o ./timer.o   
+Finished building target: guess_game_keypad.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S guess_game_keypad.elf  >"guess_game_keypad.lss"
+Finished building: guess_game_keypad.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 guess_game_keypad.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9962 bytes (60.8% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (10.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:34:07 **** Incremental Build of configuration Debug for project guess_game_keypad ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../LCD/../micro_config.h:21,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:35:1: warning: "SREG" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:410,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/common.h:103:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:38:1: warning: "TCCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:393:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:40:1: warning: "TCNT0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:391:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:41:1: warning: "OCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:472:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:42:1: warning: "TIMSK" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:450:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:52:1: warning: "TCNT1" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:348:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:53:1: warning: "TCCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:362:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:57:1: warning: "OCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:342:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:58:1: warning: "OCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:336:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:60:1: warning: "TCCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:353:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:62:1: warning: "TCNT2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:317:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:63:1: warning: "OCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:315:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:64:1: warning: "TCCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:319:1: warning: this is the location of the previous definition
+../main.c: In function 'main':
+../main.c:80: warning: implicit declaration of function 'rand'
+Finished building: ../main.c
+ 
+Building target: guess_game_keypad.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,guess_game_keypad.map -mmcu=atmega16 -o "guess_game_keypad.elf"  ./keypad/keypad.o  ./MCAL/DIO.o  ./LCD/lcd.o  ./main.o ./timer.o   
+Finished building target: guess_game_keypad.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S guess_game_keypad.elf  >"guess_game_keypad.lss"
+Finished building: guess_game_keypad.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 guess_game_keypad.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9974 bytes (60.9% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (10.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:35:46 **** Incremental Build of configuration Debug for project guess_game_keypad ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../LCD/../micro_config.h:21,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:35:1: warning: "SREG" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:410,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/common.h:103:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:38:1: warning: "TCCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:393:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:40:1: warning: "TCNT0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:391:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:41:1: warning: "OCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:472:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:42:1: warning: "TIMSK" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:450:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:52:1: warning: "TCNT1" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:348:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:53:1: warning: "TCCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:362:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:57:1: warning: "OCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:342:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:58:1: warning: "OCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:336:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:60:1: warning: "TCCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:353:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:62:1: warning: "TCNT2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:317:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:63:1: warning: "OCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:315:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:64:1: warning: "TCCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:319:1: warning: this is the location of the previous definition
+../main.c: In function 'main':
+../main.c:80: warning: implicit declaration of function 'rand'
+Finished building: ../main.c
+ 
+Building target: guess_game_keypad.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,guess_game_keypad.map -mmcu=atmega16 -o "guess_game_keypad.elf"  ./keypad/keypad.o  ./MCAL/DIO.o  ./LCD/lcd.o  ./main.o ./timer.o   
+Finished building target: guess_game_keypad.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S guess_game_keypad.elf  >"guess_game_keypad.lss"
+Finished building: guess_game_keypad.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 guess_game_keypad.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9962 bytes (60.8% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (10.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:38:53 **** Incremental Build of configuration Debug for project guess_game_keypad ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../LCD/../micro_config.h:21,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:35:1: warning: "SREG" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:410,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/common.h:103:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:38:1: warning: "TCCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:393:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:40:1: warning: "TCNT0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:391:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:41:1: warning: "OCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:472:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:42:1: warning: "TIMSK" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:450:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:52:1: warning: "TCNT1" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:348:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:53:1: warning: "TCCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:362:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:57:1: warning: "OCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:342:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:58:1: warning: "OCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:336:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:60:1: warning: "TCCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:353:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:62:1: warning: "TCNT2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:317:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:63:1: warning: "OCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:315:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:64:1: warning: "TCCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:319:1: warning: this is the location of the previous definition
+../main.c: In function 'main':
+../main.c:83: warning: implicit declaration of function 'rand'
+Finished building: ../main.c
+ 
+Building target: guess_game_keypad.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,guess_game_keypad.map -mmcu=atmega16 -o "guess_game_keypad.elf"  ./keypad/keypad.o  ./MCAL/DIO.o  ./LCD/lcd.o  ./main.o ./timer.o   
+Finished building target: guess_game_keypad.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S guess_game_keypad.elf  >"guess_game_keypad.lss"
+Finished building: guess_game_keypad.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 guess_game_keypad.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9976 bytes (60.9% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (10.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:40:09 **** Incremental Build of configuration Debug for project guess_game_keypad ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../LCD/../micro_config.h:21,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:35:1: warning: "SREG" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:410,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/common.h:103:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:38:1: warning: "TCCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:393:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:40:1: warning: "TCNT0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:391:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:41:1: warning: "OCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:472:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:42:1: warning: "TIMSK" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:450:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:52:1: warning: "TCNT1" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:348:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:53:1: warning: "TCCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:362:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:57:1: warning: "OCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:342:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:58:1: warning: "OCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:336:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:60:1: warning: "TCCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:353:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:62:1: warning: "TCNT2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:317:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:63:1: warning: "OCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:315:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:64:1: warning: "TCCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:319:1: warning: this is the location of the previous definition
+../main.c: In function 'main':
+../main.c:83: warning: implicit declaration of function 'rand'
+Finished building: ../main.c
+ 
+Building target: guess_game_keypad.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,guess_game_keypad.map -mmcu=atmega16 -o "guess_game_keypad.elf"  ./keypad/keypad.o  ./MCAL/DIO.o  ./LCD/lcd.o  ./main.o ./timer.o   
+Finished building target: guess_game_keypad.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S guess_game_keypad.elf  >"guess_game_keypad.lss"
+Finished building: guess_game_keypad.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 guess_game_keypad.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9976 bytes (60.9% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (10.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:40:44 **** Incremental Build of configuration Debug for project guess_game_keypad ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../LCD/../micro_config.h:21,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:35:1: warning: "SREG" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:410,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/common.h:103:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:38:1: warning: "TCCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:393:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:40:1: warning: "TCNT0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:391:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:41:1: warning: "OCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:472:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:42:1: warning: "TIMSK" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:450:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:52:1: warning: "TCNT1" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:348:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:53:1: warning: "TCCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:362:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:57:1: warning: "OCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:342:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:58:1: warning: "OCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:336:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:60:1: warning: "TCCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:353:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:62:1: warning: "TCNT2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:317:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:63:1: warning: "OCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:315:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:64:1: warning: "TCCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:319:1: warning: this is the location of the previous definition
+../main.c: In function 'main':
+../main.c:84: warning: implicit declaration of function 'rand'
+Finished building: ../main.c
+ 
+Building target: guess_game_keypad.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,guess_game_keypad.map -mmcu=atmega16 -o "guess_game_keypad.elf"  ./keypad/keypad.o  ./MCAL/DIO.o  ./LCD/lcd.o  ./main.o ./timer.o   
+Finished building target: guess_game_keypad.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S guess_game_keypad.elf  >"guess_game_keypad.lss"
+Finished building: guess_game_keypad.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 guess_game_keypad.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9976 bytes (60.9% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (10.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:41:37 **** Incremental Build of configuration Debug for project guess_game_keypad ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../LCD/../micro_config.h:21,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:35:1: warning: "SREG" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:410,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/common.h:103:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:38:1: warning: "TCCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:393:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:40:1: warning: "TCNT0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:391:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:41:1: warning: "OCR0" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:472:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:42:1: warning: "TIMSK" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:450:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:52:1: warning: "TCNT1" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:348:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:53:1: warning: "TCCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:362:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:57:1: warning: "OCR1A" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:342:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:58:1: warning: "OCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:336:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:60:1: warning: "TCCR1B" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:353:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:62:1: warning: "TCNT2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:317:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:63:1: warning: "OCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:315:1: warning: this is the location of the previous definition
+In file included from ../MCAL/DIO.h:13,
+                 from ../main.c:12:
+../MCAL/../registers.h:64:1: warning: "TCCR2" redefined
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:236,
+                 from ../LCD/../micro_config.h:19,
+                 from ../LCD/lcd.h:18,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h:319:1: warning: this is the location of the previous definition
+../main.c: In function 'main':
+../main.c:79: warning: implicit declaration of function 'rand'
+Finished building: ../main.c
+ 
+Building target: guess_game_keypad.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,guess_game_keypad.map -mmcu=atmega16 -o "guess_game_keypad.elf"  ./keypad/keypad.o  ./MCAL/DIO.o  ./LCD/lcd.o  ./main.o ./timer.o   
+Finished building target: guess_game_keypad.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S guess_game_keypad.elf  >"guess_game_keypad.lss"
+Finished building: guess_game_keypad.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 guess_game_keypad.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9976 bytes (60.9% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (10.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
